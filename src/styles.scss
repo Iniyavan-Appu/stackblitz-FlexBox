@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: hsla(220, 5, 90, 1);
+  font-family: 'Work Sans', sans-serif;
+}
+.container {
+  display: flex;
+  background-color: #4524fb;
+  padding: 1rem;
+  gap: 1rem;
+  width: min(100% - 2rem, 1200px);
+  margin: 80px auto;
+  flex-wrap: wrap;
+}
+.items {
+  background-color: #17cb49;
+  /*   width: 150px; */
+  height: 85px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 24px;
+  font-weight: 600;
+
+  border-radius: 6px;
+  flex-basis: 150px;
+  flex-grow: 1;
+  cursor: pointer;
+  &:hover {
+    background-color: #ffed49;
+  }
+  &:active {
+    background-color: #02de49;
+    border: 3px solid #2d2d2d;
+  }
+}
+
+@import '../node_modules/bootstrap/scss/bootstrap';
